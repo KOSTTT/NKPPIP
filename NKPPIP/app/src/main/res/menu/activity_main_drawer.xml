@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_eat"
+            android:icon="@mipmap/ic_eat"
+            android:title="@string/eat" />
+        <item
+            android:id="@+id/nav_product"
+            android:icon="@mipmap/ic_product"
+            android:title="@string/prod" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@mipmap/ic_tools"
+            android:title="@string/tools" />
+    </group>
+
+    <item android:title="Разное">
+        <menu>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@mipmap/ic_help"
+                android:title="@string/help" />
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@mipmap/ic_info"
+                android:title="@string/info" />
+        </menu>
+
+    </item>
+</menu>

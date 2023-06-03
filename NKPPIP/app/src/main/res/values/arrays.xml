@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="eat_array">
+        <item>Аджика</item>
+        <item>Айран</item>
+        <item>Багет</item>
+        <item>Барбекю</item>
+        <item>Винегрет</item>
+        <item>Каши</item>
+        <item>Окрошка</item>
+        <item>Щи</item>
+    </string-array>
+
+    <string-array name="product_array">
+        <item>Горошек</item>
+        <item>Капуста</item>
+        <item>Картофель</item>
+        <item>Колбаса варенная</item>
+        <item>Молоко</item>
+        <item>Мука</item>
+        <item>Манная крупа</item>
+        <item>Морковь</item>
+        <item>Огурцы</item>
+        <item>Помидор</item>
+        <item>Свекла</item>
+        <item>Чеснок</item>
+    </string-array>
+
+    <string-array name="tools_array">
+        <item>Автоклав</item>
+        <item>Баранчик</item>
+        <item>Блендер</item>
+        <item>Венчик</item>
+        <item>Гастрономический нож</item>
+        <item>Грохот</item>
+        <item>Казан</item>
+        <item>Мясорыхлитель</item>
+        <item>Слайсер</item>
+        <item>Сотейник</item>
+        <item>Фритюр</item>
+    </string-array>
+    <string-array name="text_size_array">
+        <item>Маленький</item>
+        <item>Средний</item>
+        <item>Большой</item>
+
+    </string-array>
+</resources>
