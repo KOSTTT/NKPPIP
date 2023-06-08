@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         list.setAdapter(adapter);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(binding.appBarMain.toolbar);
-        toolbar.setTitle(R.string.eat);
         drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         navigationView.setNavigationItemSelectedListener(this);
