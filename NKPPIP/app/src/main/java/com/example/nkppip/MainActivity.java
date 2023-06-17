@@ -5,14 +5,18 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
 
 import com.example.nkppip.Settings.SettingsActivity;
+import com.example.nkppip.adapter.MainAdapter;
+import com.example.nkppip.db.DbManager;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -26,6 +30,8 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.nkppip.databinding.ActivityMainBinding;
 
@@ -41,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ArrayAdapter<String> adapter;
     private Toolbar toolbar;
     private int chapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -74,6 +82,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -105,6 +115,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         else if (id == R.id.nav_tools) {
             fillArray(R.string.tools,R.array.tools_array,2);
         }
+        else if (id == R.id.nav_receipt) {
+            Intent intent = new Intent(MainActivity.this,ReceiptActivity.class);
+            startActivity(intent);
+        }
         else if (id == R.id.nav_help) {
             Toast.makeText(this, "Ты молодец, но лучше выйди с кухни.", Toast.LENGTH_SHORT).show();
         }
@@ -122,4 +136,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         adapter.notifyDataSetChanged();
         chapter = index;
     }
+
 }

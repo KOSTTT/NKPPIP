@@ -7,10 +7,13 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Настройки</string>
     <string name="text_size">Размер текста</string>
+    <string name="add_error">Не все поля заполнены!</string>
+    <string name="save">Данные успешно сохранены!</string>
 
     <string name="eat">Блюда и изделия</string>
     <string name="prod">Кулинарные продукты</string>
     <string name="tools">Кулинарный инвентарь</string>
+    <string name="receipt">Ваши рецепты</string>
     <string name="help">Поддержка</string>
     <string name="info">Разработчики</string>
     <string name="adjika">

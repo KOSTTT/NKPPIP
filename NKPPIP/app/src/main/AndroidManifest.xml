@@ -26,6 +26,9 @@
         <activity android:name=".MainActivity"             android:theme="@style/Theme.NKPPIP.NoActionBar"/>
         <activity android:name="com.example.nkppip.InfoActivity" />
         <activity android:name="com.example.nkppip.Settings.SettingsActivity" />
+        <activity android:name="com.example.nkppip.ReceiptActivity" android:theme="@style/Theme.NKPPIP.NoActionBar"/>
+        <activity android:name="com.example.nkppip.AddActivity" android:theme="@style/Theme.NKPPIP.NoActionBar"/>
+
     </application>
 
 </manifest>
