@@ -15,8 +15,6 @@ import android.widget.Toast;
 import androidx.appcompat.widget.Toolbar;
 
 import com.example.nkppip.Settings.SettingsActivity;
-import com.example.nkppip.adapter.MainAdapter;
-import com.example.nkppip.db.DbManager;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -114,10 +112,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         else if (id == R.id.nav_tools) {
             fillArray(R.string.tools,R.array.tools_array,2);
-        }
-        else if (id == R.id.nav_receipt) {
-            Intent intent = new Intent(MainActivity.this,ReceiptActivity.class);
-            startActivity(intent);
         }
         else if (id == R.id.nav_help) {
             Toast.makeText(this, "Ты молодец, но лучше выйди с кухни.", Toast.LENGTH_SHORT).show();
