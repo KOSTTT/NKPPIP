@@ -24,7 +24,8 @@ public class InfoActivity extends AppCompatActivity {
     private ImageView iImage,iImage2,iImage3;
     private Typeface face1;
     private int[] array_eat = {R.string.adjika,R.string.airan,R.string.baget,R.string.BQ,
-            R.string.vinigret,R.string.doma,R.string.jambo,R.string.kasha,R.string.okroshka,R.string.raf,R.string.tiramisu,R.string.fondan,R.string.shkmirul,R.string.sup};
+            R.string.vinigret,R.string.doma,R.string.jambo,R.string.kasha,R.string.okroshka,R.string.raf,
+            R.string.tiramisu,R.string.fondan,R.string.shkmirul,R.string.sup};
     private int[] array_prod = {R.string.goroh,R.string.kapusta,R.string.kartofel,R.string.kolbasa,
             R.string.milk,R.string.muka,R.string.manka,R.string.carrot,R.string.ogurets,R.string.pomidor,
             R.string.svekla,R.string.chesnok};
@@ -35,7 +36,7 @@ public class InfoActivity extends AppCompatActivity {
             R.drawable.vinegret,R.drawable.dolma,R.drawable.jambo,R.drawable.kasha,R.drawable.okroshka,R.drawable.raf,
             R.drawable.tiramisu,R.drawable.fondan,R.drawable.shkmerul,R.drawable.sup};
     private int [] array_image_eat2 = {R.drawable.adjika2,R.drawable.airan2,R.drawable.baget2,R.drawable.barbeq2,
-            R.drawable.vinegret2,R.drawable.dolma2,R.string.vinigret,R.drawable.jambo2,R.drawable.kasha2,R.drawable.okroshka2,R.drawable.raf2,
+            R.drawable.vinegret2,R.drawable.dolma2,R.drawable.jambo2,R.drawable.kasha2,R.drawable.okroshka2,R.drawable.raf2,
             R.drawable.tiramisu2,R.drawable.fondan2,R.drawable.shkmerul2,R.drawable.sup2};
     private int [] array_image_eat3 = {R.drawable.adjika3,R.drawable.airan3,R.drawable.baget3,R.drawable.barbeq3,
             R.drawable.vinegret3,R.drawable.dolma3,R.drawable.jambo3,R.drawable.kasha3,R.drawable.okroshka3,R.drawable.raf3,
@@ -59,9 +60,9 @@ public class InfoActivity extends AppCompatActivity {
             R.drawable.venchik3,R.drawable.gastro_nosh3,R.drawable.grohot3,R.drawable.kazan3,R.drawable.misorihl3,
             R.drawable.slaiser3,R.drawable.soteinik3,R.drawable.fritur3};
     private String [] array_title_eat = {"Аджика","Айран","Багет",
-            "Барбекю","Винегрет","Джамбалайя","Каши","Окрошка","Рафаэлло","Торт Тирамису","Фондан","Шкмерули","Щи"};
+            "Барбекю","Винегрет","Долма","Джамбалайя","Манная каша","Окрошка","Рафаэлло","Торт Тирамису","Фондан","Шкмерули","Щи"};
     private String [] array_title_prod = {"Горох","Капуста","Картофель",
-            "Колбаса","Молоко","Мука","Манная крупа","Морковь","Огурец","Помидор","Свекла","Чеснок"};
+            "Колбаса вареная","Молоко","Мука","Манная крупа","Морковь","Огурец","Помидор","Свекла","Чеснок"};
     private String [] array_title_tools = {"Автоклав","Баранчик","Блендер",
             "Венчик","Гастрономический нож","Грохот","Казан","Мясорыхлитель","Слайсер","Сотейник","Фритюр"};
 
@@ -115,7 +116,7 @@ public class InfoActivity extends AppCompatActivity {
         iImage2 = findViewById(R.id.infoImage2);
         iImage3 = findViewById(R.id.infoImage3);
 //        face1 = Typeface.createFromAsset(this.getAssets(),"fonts/Neucha-Regular.ttf");
-        info_content.setTypeface(face1);
+//        info_content.setTypeface(face1);
         actionBar = getSupportActionBar();
         String text = sharedPreferences.getString("main_text_size","Средний");
         if(text != null){
